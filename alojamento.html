@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Sol Nascente - Detalhe | AlojaJá</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">AlojaJá</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="resultados.html">Pesquisar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Entrar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="py-4">
+    <div class="container">
+        <!-- Cabeçalho do alojamento -->
+        <header class="mb-4">
+            <h1 class="h3 mb-1">Hotel Sol Nascente</h1>
+            <p class="text-muted mb-2">Hotel • Porto, Portugal</p>
+            <span class="badge bg-success me-2">Pequeno-almoço incluído</span>
+            <span class="badge bg-info text-dark me-2">Cancelamento gratuito até 3 dias antes</span>
+            <span class="badge bg-secondary">Ideal para famílias</span>
+        </header>
+
+        <!-- Galeria simples -->
+        <section class="mb-4" aria-labelledby="sec-fotos">
+            <h2 class="h5 mb-3" id="sec-fotos">Fotos</h2>
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/800x450" 
+                         alt="Foto principal do Hotel Sol Nascente" 
+                         class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/400x250" 
+                                 alt="Quarto standard" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/400x250" 
+                                 alt="Piscina exterior" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/400x250" 
+                                 alt="Sala de refeições" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/400x250" 
+                                 alt="Receção" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descrição + info -->
+        <section class="row mb-4">
+            <div class="col-md-8">
+                <h2 class="h5">Descrição</h2>
+                <p>
+                    O Hotel Sol Nascente está localizado no coração do Porto, a poucos minutos das 
+                    principais atrações turísticas. Com quartos modernos e confortáveis, é ideal 
+                    tanto para viagens de lazer como de negócios.
+                </p>
+
+                <h3 class="h6 mt-3">Política de crianças</h3>
+                <p class="small">
+                    Crianças até aos 6 anos: hospedagem gratuita em cama existente.  
+                    Dos 7 aos 12 anos: 50% de desconto na tarifa de adulto.
+                </p>
+
+                <h3 class="h6 mt-3">Comodidades</h3>
+                <ul class="small">
+                    <li>Wi-Fi gratuito em todo o hotel</li>
+                    <li>Piscina exterior</li>
+                    <li>Spa e ginásio</li>
+                    <li>Estacionamento privativo</li>
+                    <li>Receção 24h</li>
+                </ul>
+
+                <h3 class="h6 mt-3">Tipos de pagamento aceites</h3>
+                <ul class="small">
+                    <li>Cartão de crédito (Visa, Mastercard)</li>
+                    <li>Multibanco</li>
+                    <li>Transferência bancária</li>
+                </ul>
+            </div>
+
+            <!-- Caixa de reserva rápida -->
+            <aside class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h6 mb-3">Reserva rápida</h2>
+                        <p class="fw-bold mb-2">desde 87€/noite</p>
+                        <form action="reserva.html" method="get">
+                            <div class="mb-2">
+                                <label class="form-label">Check-in</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Check-out</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Hóspedes</label>
+                                <input type="number" class="form-control" min="1" value="2" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 mt-2">
+                                Continuar para reserva
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Lista de quartos -->
+        <section aria-labelledby="sec-quartos">
+            <h2 class="h5 mb-3" id="sec-quartos">Quartos disponíveis</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th>Tipologia</th>
+                            <th>Descrição</th>
+                            <th>Preço/noite</th>
+                            <th>Disponibilidade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single</td>
+                            <td>Quarto individual com cama single, vista cidade.</td>
+                            <td>70€</td>
+                            <td><span class="badge bg-success">Disponível</span></td>
+                            <td>
+                                <a href="reserva.html" class="btn btn-sm btn-primary">
+                                    Reservar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Double</td>
+                            <td>Quarto duplo com cama de casal, pequeno-almoço incluído.</td>
+                            <td>87€</td>
+                            <td><span class="badge bg-success">Disponível</span></td>
+                            <td>
+                                <a href="reserva.html" class="btn btn-sm btn-primary">
+                                    Reservar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Twin</td>
+                            <td>Quarto com duas camas individuais.</td>
+                            <td>90€</td>
+                            <td><span class="badge bg-danger">Sem quartos disponíveis</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-secondary" disabled>
+                                    Indisponível
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="bg-light border-top py-3 mt-auto">
+    <div class="container text-center small text-muted">
+        &copy; 2025 AlojaJá.
+    </div>
+</footer>
+
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
